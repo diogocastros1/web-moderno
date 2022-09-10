@@ -1,3 +1,6 @@
+//Exemplo de que a linguagem permite mesmo sem passarmos todos os valores
+//o codigo executa sem dar erro, retornando somente NaN
+
 function area(largura, altura) {
     const area = largura * altura
     if (area > 20) {
