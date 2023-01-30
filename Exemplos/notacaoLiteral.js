@@ -19,7 +19,7 @@ console.log(obj4)
 const obj5 = {
     funcao1: function(){
         //..
-    }
+    },
     funcao2(){
         //..
     }
