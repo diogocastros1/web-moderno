@@ -12,7 +12,7 @@ O ^ permite que as versões *minor* instaladas sejam atualizadas, conforme exemp
   }
 ~~~
 No exemplo acima o axios pode assumir qualquer versão 1.X.X, mas não uma versão 2.X.X.
-<b>
+
 Já ao utilizarmos o ~ estamos dizendo que somente o último digito da versão *fix* pode ser atualizado.
 
 ~~~JSON
