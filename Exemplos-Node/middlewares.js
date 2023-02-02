@@ -1,13 +1,3 @@
-# Curso de Web Moderno
-
-Este repositório é destinado para os exercicios e exemplos do curso de Web Moderno.
-
-## Middleware
-Temos a cadeia de responsabilidade, para isto não há amarração direta dentro de cada 
-função, para isto temos um aproveitamento melhor da função criada pois temos uma função *"next()"*
-que podemos declarar ou não de acordo com a necessidade. Conforme código abaixo:
-
-~~~javascript
 // middleware pattern (chain of responsability)
 const passo1 = (ctx, next) => {
     ctx.valor1 = 'mid1'
@@ -33,7 +23,3 @@ const ctx = {}
 exec(ctx, passo1, passo2, passo3)
 
 console.log(ctx)
-~~~
-
-
-
