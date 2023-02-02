@@ -43,3 +43,8 @@ E ao executar teriamos o seguinte:
     "axios": "1.3.0"
   }
 ~~~
+
+## package-lock.json
+Este arquivo vai garantir qual foi a versão que o projeto foi buildado, desta forma 
+mesmo que no package.json os modulos instalados estejam com o ^ ou ~ eles não irão 
+ser instalados em versões diferentes das que estão no package-lock.json.
