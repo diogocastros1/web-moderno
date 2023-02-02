@@ -3,6 +3,6 @@ const axios = require('axios')
 
 axios.get(url).then(response => {
     const funcionarios = response.data
-    console.log(funcionarios[0])
+    console.log(funcionarios)
 })
 
