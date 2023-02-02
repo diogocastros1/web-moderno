@@ -3,8 +3,8 @@
 Este repositório é destinado para os exercicios e exemplos do curso de Web Moderno.
 
 ## Middleware
-Temos a cadeia de responsabilidade, para isto não há amarração direta dentro de cada 
-função, para isto temos um aproveitamento melhor da função criada pois temos uma função *"next()"*
+O middleware é uma cadeia de responsabilidade, com isto não há amarração direta dentro de cada 
+função, desta forma temos um aproveitamento melhor da função criada pois temos uma função *"next()"*
 que podemos declarar ou não de acordo com a necessidade. Conforme código abaixo:
 
 ~~~javascript
