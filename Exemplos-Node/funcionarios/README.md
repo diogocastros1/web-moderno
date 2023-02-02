@@ -53,7 +53,7 @@ ser instalados em versões diferentes das que estão no package-lock.json.
 ### scripts
 Os scripts que ficam dentro do package.json são muito úteis para automatização de processos.
 No exemplo abaixo estamos utilizando-o somente para startar o nodemon, mas podemos encadear varios 
-comandos para execução em determinados momentos, utilizando o *&&* como vemos no *"test"*.
+comandos para execução em determinados momentos, utilizando o *"&&"* como vemos no *"test"*.
 ~~~JSON
 "scripts": {
     "start": "nodemon",
@@ -61,11 +61,11 @@ comandos para execução em determinados momentos, utilizando o *&&* como vemos 
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 ~~~
-Para executar estes scripts com nomes padrão, como *start* basta digitar 
+Para executar estes scripts com nomes padrão, como *"start"* basta digitar 
 ~~~ 
 npm start 
 ~~~
-Ou no caso de scripts que não são padrão, como *dev* digitar:
+Ou no caso de scripts que não são padrão, como *"dev"* digitar:
 ~~~
 npm run dev
 ~~~
