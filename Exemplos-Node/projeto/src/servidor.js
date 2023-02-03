@@ -1,15 +1,24 @@
 const porta = 3003
 
 const express = require('express')
-
 const app = express()
+const bancoDeDados = require('./bancoDeDados')
 
 app.get('/produtos', (req, res, next) => {
-    res.send({nome: 'Notebook', preco: 123.45}) //Converter para JSON
+    res.send(bancoDeDados.getProdutos())
 })
 
-//utilizando o use no lugar do get, atendemos qualquer requisição, mas o correto é 
-//utilizar as requisções da forma correta.
+app.get('/produtos/:id', (req, res, next) => {
+    res.send(bancoDeDados.getProduto(req.params.id))
+})
+
+app.post('/produtos', (req, res, next) => {
+    const produto = bancoDeDados.salvarProduto({
+        nome: req.body.name,
+        preco: req.body.preco
+    })
+    res.send(produto) //JSON
+})
 
 app.listen(porta, () => {
     console.log(`Sevidor está executando na porta ${porta}.`)
