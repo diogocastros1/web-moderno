@@ -37,5 +37,6 @@ console.log(ctx)
 
 ## Express
 É um servidor web para criação dos web services.
-
+Na pasta Projeto tem alguns exemplo de requisições e respostas.
+Para efetuar os testes na "API" utilizamos o Postman.
 
