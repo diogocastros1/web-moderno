@@ -24,7 +24,7 @@ const getTurma = (letra, callback) => {
 // Objetivo de simplificar o uso de promise
 
 
-// sempre que tiver uma funcao que retorna uma promise, existe a 
+// sempre que tiver uma funcao async, existe a 
 // possibilidade de utilizar o await
 let obterAlunos = async () => {
     const ta = await getTurma('A')
