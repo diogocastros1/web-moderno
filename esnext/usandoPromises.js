@@ -1,5 +1,4 @@
 // com promise
-const { Console } = require('console')
 const http = require('http')
 
 const getTurma = (letra, callback) => {
