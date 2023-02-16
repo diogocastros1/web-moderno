@@ -1,21 +1,36 @@
-// Encapsulando uma chamada de arquivo dentro de uma promise
+function gerarNumerosEntre(min, max, tempo) {
+    if (min > max) {
+       [max, min] = [min, max]
+    }
 
-const fs = require('fs')
-const path = require('path')
-
-function lerArquivo(caminho) {
     return new Promise(resolve => {
-        fs.readFile(caminho, function(_, conteudo){
-            resolve(conteudo.toString())
-        })
-        console.log('Depois de ler')
+        setTimeout(function() {
+            const fator = max - min + 1
+            const aleatorio = parseInt(Math.random() * fator) + min
+            resolve(aleatorio)
+        }, tempo)
     })
 }
 
-const caminho = path.join(__dirname, 'dados.txt')
+// Desta forma iremos gerar varios numeros de uma vez
+function gerarVariosNumeros() {
+    return Promise.all([
+        gerarNumerosEntre(1, 60, 1000),
+        gerarNumerosEntre(1, 60, 4000),
+        gerarNumerosEntre(1, 60, 500),
+        gerarNumerosEntre(1, 60, 5000),
+        gerarNumerosEntre(1, 60, 100),
+        gerarNumerosEntre(1, 60, 2000),
+    ])
+}
 
-lerArquivo(caminho)
-    .then(conteudo => conteudo.split('\r\n'))
-    .then(linhas => linhas.join(', '))
-    .then(conteudo => `O valor final é: ${conteudo}`)
-    .then(console.log)
+// Como as promises estão encadeadas, teremos os resultados somente após
+// todas serem resolvidas
+
+console.time('Tempo de exec') // podemos contar o tempo no inicio de uma execução
+
+gerarVariosNumeros()
+    .then(numeros => console.log(numeros))
+    .then(() => {
+        console.timeEnd('Tempo de exec') // aqui recuperamos o tempo final de execucao 
+    })
