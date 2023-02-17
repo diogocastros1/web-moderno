@@ -16,6 +16,7 @@ function funcionarOuNao(valor, chanceErro) {
     })
 }
 
+// o erro da linha 5 cai na primeira tratativa de erro, neste caso na linha 24.
 funcionarOuNao('Agora foi...', 0.5)
     .then(v => console.log(`Valor: ${v}`))
     .then(
