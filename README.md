@@ -64,3 +64,25 @@ desde que este não fique muito grande. Mesma coisa com CSS.
 Atualmente todas as aplicações utilizam a estrutura client side e conjunto com server side, ou seja
 utilizamos o front para tratativas mais simples e o servidor para obter dados.
 
+### Conteúdo Estático vs Dinâmico
+* **Estático** - quando o servidor le um arquivo do disco para renderizar a página. Para gerar está pagina 
+a renderização é mais rápida;
+* **Dinâmico** - contúdo gerado a partir de um código que pode trazer informações personalizadas;
+
+### HTTPSeguro
+* **HTTP + TLS** - Transfer Layer Security Protocol (SSL v4)
+* **HTTP + SSL** - Security Sockers Layer Protocol
+
+#### Certificado <> Protocolo
+Costumamos encontrar a descrição *Certificado SSL/TLS*, mas o correto é *Certificados usados com SSL/TLS*.
+
+Um certificado pode ser válido para um navegador mas para outro pode ser inválidado se for um navegador mais antigo que não tenha
+este certificado instalado.
+
+CA - Certificadora Autorizada.
+
+Uma certificadora gratuita é  o *lets encrypt*.
+#### Beneficios
+* Dados criptografados: URL, cookies e headers
+* Protege contra interceptação (MITM)
+* Usa certificados digitais
