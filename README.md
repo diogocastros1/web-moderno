@@ -86,3 +86,8 @@ Uma certificadora gratuita é  o *lets encrypt*.
 * Dados criptografados: URL, cookies e headers
 * Protege contra interceptação (MITM)
 * Usa certificados digitais
+
+### Web Service
+* Simple Object Access Protocol ou SOAP - mais antigo e mais dificil de trabalhar, utiliza um conceito de RPC em um formato XML.
+* Representational state transfer mais conhecido como REST é a forma que adotamos para efetuar as requisições através dos metodos
+HTTP para efetuar as reuisições. 
