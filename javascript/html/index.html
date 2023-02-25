@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios HTML</h1>
+    </header>
+    <nav>
+        <a href wm-nav="exercicios/teste.html">00 - Teste</a>
+        <a href wm-nav="exercicios/temp.html">| Temp</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        <br>
+        Curso de Web Moderno
+    </footer>
+    <script>
+        /*
+        Vamos capturar o click do link para que ao inves de direcionarmos 
+        para a pagina chamada, vamos exibir o conteudo da pagina na section
+        conteudo.
+        Para isto estamos utilizando o document.querySelectorAll e pegando todo
+        atribudo wm-nav, fazemos um forEach para pegar todos e abaixo capturamos 
+        com o link.onclick todas as vezes que alguem clicar neste link, feito isso
+        temos a função e.preventDefault() que impede que após o click seja feito o 
+        direcionamento para outra página.
+        */
+        // document.querySelectorAll('a').forEach(link => {
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+
+            /*
+            criamos a const conteudo ser o corpo da section que tem
+            como id conteudo
+            */
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function (e) {
+                e.preventDefault()
+
+                /*
+                a função fetch é baseada em promises e com ela fazemos a 
+                captura do wm-nav e acessamos seu conteudo, depois disso 
+                adicionamos este conteudo a const conteudo que criamos 
+                para que este seja colocado no lugar correspondente
+                */
+                fetch(link.getAttribute('wm-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+
+</html>
