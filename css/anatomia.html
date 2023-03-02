@@ -6,14 +6,32 @@
     <title>Anatomia CSS</title>
     <style>
         .seletor {
-            color: #000;
+            color: #fff;
             font-size: 30px;
             text-align: center;
             /* multiplos valores */
-            border: solid 5px navy; /* shorthand property */
+            border: solid 5px navy;
+            /* shorthand property */
             font-family: Helvetica, monospace;
+            /*  funções */
+            width: calc(100% - 100px);
+            background-color: rgb(30, 150, 189);
 
         }
+
+        /* Usando uma pseudo-classe */
+        .seletor:hover {
+            background-color: orangered;
+        }
+        .seletor:focus {
+            color: #fff;
+        }
+        .seletor::first-letter {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+
     </style>
 </head>
 
