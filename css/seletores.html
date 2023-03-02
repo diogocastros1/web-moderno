@@ -6,7 +6,109 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* seletor universal */
+        /* * {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* seletor de classe */
+        /* .tag {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* seletor de id */
+        /* #aprovados {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* selecionando div dentro de id  */
+        /* #aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* selecionando section dentro de id  */
+        /* #aninhado section {
+            color: #ff0;
+            background-color: #f77;
+        } */
+
+        /* selecionando uma ul que vem logo após um p  */
+        /* p + ul {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* selecionando a primeira ol e todas as demais logo após o p  */
+        /* p ~ ol {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* seletor por uma propriedade, neste caso feira  */
+        /* [feira] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* seletor por um valor da propriedade, neste caso escritorio  */
+        /* [feira~=escritorio] {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+         
+        /* seletor por um valor da propriedade, neste caso escritorio  */
+        /* [feira~=escritorio] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+         
+        /* seletor por um valor da propriedade, neste caso todo valor que possua sa  */
+        /* [feira*=sa] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+         
+        /* selecionando o segundo filho span de alguma tag */
+        /* span:nth-child(2) {
+            color: #ff0;
+            background-color: #f77;
+        } */
+         
+        /* selecionando o filhos pares dentro de uma section */
+        /* section > :nth-child(even) {
+            color: #ff0;
+            background-color: #f77;
+        } */
+         
+        
+        /* selecionando o filhos impares dentro de uma section */
+        /* section > :nth-child(odd) {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* selecionando mais de uma tag de uma vez*/
+        /* section > :nth-child(odd), ul, p {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* selecionando somente a label dos filhos impares */
+        /* section > :nth-child(odd) label {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        
+        /* selecionando o segundo elemento do tipo span dentro da section */
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
+
     </style>
 </head>
 
