@@ -6,6 +6,38 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* 
+            Em linhas gerais....
+            
+            1. com o !important devemos tomar cuidado para que a exceção não se torne regra
+            2. seletores mais especificos
+            3. ultima regra processada é a que vale
+            
+            Podemos dizer que quanto mais especifico o for a forma se seleção,
+            maior prioridade ele tem.
+        
+        */
+
+        /* Nivel 1 */
+        p {
+            background-color: gray;
+        }
+        
+        /* Nivel 2 */
+        .observacao {
+            background-color: aqua;
+            border: dashed 5px;
+            padding: 200px!important;
+            font-size: 40px;
+        }
+        
+        /* Nivel 3 */
+        p.observacao {
+            color: #fff;
+            padding: 5px;
+            background: linear-gradient(to right, red, black);
+        }
+
     </style>
 </head>
 
