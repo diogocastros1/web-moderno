@@ -1,0 +1,62 @@
+<table>
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iPad</td>
+            <td>3289,00</td>
+            <td>5</td>
+            <td>16445,00</td>
+        </tr>
+        <tr>
+            <td>Samsung S9</td>
+            <td>2649,00</td>
+            <td>8</td>
+            <td>21190,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <!-- Com o colspan conseguimos mesclar as colunas,
+            caso seja necessário podemos tambem utilizar o rowspan para 
+            mesclar linhas -->
+            <td colspan="3">Total</td>
+            <td>37635,00</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 2px #444;
+        background-color: blue;
+        color: #fff;
+    }
+
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+
+    tfoot {
+        background-color: #444;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
