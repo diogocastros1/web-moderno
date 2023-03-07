@@ -6,7 +6,44 @@
     <title>Flexbox #02</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .flex-container {
+            display: flex;
+            height: 300px;
+            width: 600px;
+        }
+
+        /* alterar direto o em um filho do container neste caso o indice 3 */
+        .flex-container div:nth-child(3) {
+            background-color: indianred;
+            order: 1; /* alterando a ordem do item 3 */
+            order: 0;
+            order: -1;
+            align-self: center;
+            align-self: flex-end;
+            align-self: stretch; /* padrão */
+
+        }
+
+        .flex-container div {
+            width: 100px;
+            flex-grow: 0; /* padrão */
+            flex-grow: 1;
+        }
+
+        .flex-container div:nth-child(1) {
+            flex-grow: 3; /* divindo o tamanho e atribuindo maior parte para o item 1 */
+        }
+
+        .flex-container {
+            width: 300px;
+            flex-shrink: 1;
+        }
+
+        .flex-container div:nth-child(1) {
+            flex-shrink: 5; /* diminuindo a maior parte do item 1 */
+        }
+
+
     </style>
 </head>
 
