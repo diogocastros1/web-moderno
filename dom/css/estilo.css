@@ -17,6 +17,10 @@ body {
     color: #fff;
     height: 100%;
 }
+/* ocultando classe do live server */
+.acfifjfajpekbmhmjppnmmjgmhjkildl {
+    display: none;
+}
 
 .conteudo {
     display: flex;
