@@ -31,8 +31,21 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
-    </script>
+        console.log(document.forms)
+        console.log(document.forms[0])
+        console.log(document.getElementsByName('pesquisa')) //nodelist
+        console.log(document.getElementsByTagName('form')) //html collection
+        console.log(document.pesquisa.q)
+        document.pesquisa.q.value = 'Linux Bra'
+        document.pesquisa.hl.value = 'en-us'
+        /* As letras q e hl foram utilizadas como name pois é algo que o google suporta, 
+         como podemos ver no link abaixo após o search? e após &
+            https://www.google.com.br/search?q=Windows&hl=pt-br
+         */
+
+        //  retorna qual indice esta selecionado no hl
+         console.log(document.pesquisa.hl.selectedIndex)
+        </script>
 </body>
 
 </html>
