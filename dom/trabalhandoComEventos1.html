@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <!-- desta forma não é muito interessante pois fica explicito mas existe perda de flexibilidade -->
+        <!-- <a href="https://google.com.br" onclick="navegarEm5s(event)">Google</a> -->
+        <a espera-um-pouco href="https://google.com.br">Google</a>
+    </div>
+    <script>
+        function navegarEm5s(e) {
+            e.preventDefault() // enibe o comportamento padrão de acontecer
+            console.log('Saindo em 5s...')
+            setTimeout(() => {
+                const link = e.target
+                window.location.href = link.href
+            }, 5000)
+        }
+
+        // //forma elegante de fazer, mas deixa de uma forma mais implicita
+        // const a = document.querySelector('a')
+        // a.onclick = navegarEm5s
+        
+        // melhor forma pois utilizando um seletor especifico e tambem não fica tão implicito para quem 
+        // estiver lendo o código
+        const a = document.querySelector('[espera-um-pouco]')
+        a.onclick = navegarEm5s
+
+    </script>
+</body>

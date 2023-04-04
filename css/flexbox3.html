@@ -6,7 +6,27 @@
     <title>Flexbox #03</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-container div {
+            /* segue a orientação do flex-firection */
+            flex-basis: 100px;
+            /* caso o flex-basis esteja sendo atuado na row o width não afetará nada */
+            width: 200px;
+        }
+
+        .flex-container div:nth-child(4) {
+            /* grow shrink basis */
+            flex: 3 6 100px;
+        }
+
+        .flex-container {
+            width: 600px;
+        }
+
     </style>
 </head>
 
