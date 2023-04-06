@@ -99,7 +99,7 @@ console.log(ctx)
 Na pasta Projeto tem alguns exemplo de requisições e respostas.
 Para efetuar os testes na API utilizamos o Postman.
 
-Para exectuar um servidor local precisamos de arquivo `server.js` estruturado da seguinte forma:
+Para exectuar um seidor local precisamos de arquivo `server.js` estruturado da seguinte forma:
 
 ~~~javascript
 const bodyParser = require('body-parser')
