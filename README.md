@@ -202,3 +202,9 @@ function copiar(callback) {
         .pipe(transformacaoB())
         .pipe(transformacaoC())
 ~~~
+
+### Babel
+#### https://babeljs.io/
+
+* Auxilia a utilização de recursos atuais do JS e coloca de forma mais suportada para os browsers.
+* Em resumo ele passa o código para a versão mais antiga suportada de todos os browsers.

@@ -14,7 +14,7 @@ const antes2 = cb => {
 function copiar(callback) {
     // gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
     // outra forma de obter o mesmo resultado é a seguinte
-    gulp.src(['pastaA/**/*.txt']) // copiando todo arquivo txt que esta dentro da pasta a e subpastas
+    gulp.src(['pastaA/**/*.txt']) // copiando todo arquivo txt que esta dentro da pastaA e subpastas
         // .pipe(imagePelaMetade())
         // .pipe(imageEmPretoEBranco())
         // .pipe(transformacaoA())
