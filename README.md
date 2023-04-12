@@ -186,3 +186,5 @@ HTTP para efetuar as reuisições.
 ### https://gulpjs.com/ 
 
 * Ferramenta de automatização de alguns processos da aplicação.
+* Pode ser utilizado para transformar o código de desenvolvimento para o código de produção.
+* É composto por várias tarefas que podem ser executadas em serie ou paralelo.
