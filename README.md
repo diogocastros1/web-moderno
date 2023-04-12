@@ -188,3 +188,17 @@ HTTP para efetuar as reuisições.
 * Ferramenta de automatização de alguns processos da aplicação.
 * Pode ser utilizado para transformar o código de desenvolvimento para o código de produção.
 * É composto por várias tarefas que podem ser executadas em serie ou paralelo.
+
+### Pipe
+Os pipes são como promises que iremos chamando de acordo com a necessidade. O pipe seguinte pega sempre 
+o resultado do pipe anterior. Aplica-se transformações até que consigamos chegar ao arquivo esperado.
+
+~~~javascript
+function copiar(callback) {
+    gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
+        .pipe(imagePelaMetade())
+        .pipe(imageEmPretoEBranco())
+        .pipe(transformacaoA())
+        .pipe(transformacaoB())
+        .pipe(transformacaoC())
+~~~
