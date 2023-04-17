@@ -1,10 +1,10 @@
 const gulp = require('gulp')
 
-function monitorarArquivos(cb){
+function monitorarArquivos(cb) {
     return cb()
 }
 
-function servidor(cb){
+function servidor(cb) {
     return cb()
 }
 
