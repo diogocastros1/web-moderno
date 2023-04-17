@@ -17,4 +17,4 @@ function copiarHTML(){
         .pipe(gulp.dest('build'))
 }
 
-exports.default = parallel(transformacaoCSS, copiarHTML)
+exports.default = parallel(transformacaoCSS, copiarHTML) 
