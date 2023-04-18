@@ -179,3 +179,40 @@ HTTP para efetuar as reuisições.
 * Atualiza a página (ou parte dela) sem recarregar (reload)
 * Comunica de forma assíncrona com um Servidor Web, ou seja, envia e recebe dados em background
 * Usa muito... Callback, Promise, Async/Await
+
+---
+
+## Gulp
+### https://gulpjs.com/ 
+
+* Ferramenta de automatização de alguns processos da aplicação.
+* Pode ser utilizado para transformar o código de desenvolvimento para o código de produção.
+* É composto por várias tarefas que podem ser executadas em serie ou paralelo.
+
+### Pipe
+Os pipes são como promises que iremos chamando de acordo com a necessidade. O pipe seguinte pega sempre 
+o resultado do pipe anterior. Aplica-se transformações até que consigamos chegar ao arquivo esperado.
+
+~~~javascript
+function copiar(callback) {
+    gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
+        .pipe(imagePelaMetade())
+        .pipe(imageEmPretoEBranco())
+        .pipe(transformacaoA())
+        .pipe(transformacaoB())
+        .pipe(transformacaoC())
+~~~
+
+### Babel
+#### https://babeljs.io/
+
+* Auxilia a utilização de recursos atuais do JS e coloca de forma mais suportada para os browsers.
+* Em resumo ele passa o código para a versão mais antiga suportada de todos os browsers.
+
+### TypeScript
+#### https://www.typescriptlang.org/
+
+### SASS
+#### https://sass-lang.com/
+
+* Utilizado para simplificar o css.
