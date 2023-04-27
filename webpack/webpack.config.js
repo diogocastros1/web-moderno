@@ -17,11 +17,12 @@ module.exports = {
     // interpretação de modulos css
     module: {
         rules: [{
-            test: /\.css$/, // regex para ler css
+            test: /\.s?[ac]ss$/, // regex para ler css, sass e scss
             use: [
                 MiniCssExtractPlugin.loader, // este plugin substitui o uso do style-loader
                 // 'style-loader', // adiciona CSS a DOM injetando a tag <style>
                 'css-loader', // interpreta @import, url()....
+                'sass-loader',
             ]
         }]
     }
