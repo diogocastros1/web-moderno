@@ -99,7 +99,7 @@ console.log(ctx)
 Na pasta Projeto tem alguns exemplo de requisições e respostas.
 Para efetuar os testes na API utilizamos o Postman.
 
-Para exectuar um seidor local precisamos de arquivo `server.js` estruturado da seguinte forma:
+Para exectuar um servidor local precisamos de arquivo `server.js` estruturado da seguinte forma:
 
 ~~~javascript
 const bodyParser = require('body-parser')
@@ -160,7 +160,7 @@ este certificado instalado.
 
 CA - Certificadora Autorizada.
 
-Uma certificadora gratuita é  o *lets encrypt*.
+Uma certificadora gratuita é  a *lets encrypt*.
 #### Beneficios
 * Dados criptografados: URL, cookies e headers
 * Protege contra interceptação (MITM)
@@ -216,3 +216,16 @@ function copiar(callback) {
 #### https://sass-lang.com/
 
 * Utilizado para simplificar o css.
+
+### Servidor para SPA com Gulp
+
+No projeto final utilizamos o gulp como servidor da aplicação. Desta forma não precisamos utilizar o Live server e ja mantemos os arquivos de build atualizados, sem precisar rodar o gulp antes de subir a aplicação.
+
+Arquivos do projeto estão na pasta `gulp\spa`. 
+
+---
+
+## Webpack
+### webpack.js.org
+
+Semelhante ao gulp, porém utiliza o conceito de modulos, partindo de um arquivo JS conseguimos chegar na aplicação final.
