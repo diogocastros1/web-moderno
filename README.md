@@ -229,3 +229,31 @@ Arquivos do projeto estão na pasta `gulp\spa`.
 ### webpack.js.org
 
 Semelhante ao gulp, porém utiliza o conceito de modulos, partindo de um arquivo JS conseguimos chegar na aplicação final.
+
+## Bootstrap
+### https://getbootstrap.com/
+
+Classes do bootstrap são definidas de acordo com o estilo que deseja aplicar a cada uma delas. Por exemplo, para aplicar uma margin utilizamos a classe `m-1` neste caso estamos aplicando uma margin em todos os lados de tamanho 1, que pode ir até 5. Com isto para aplicar uma margin somente em baixo, utilizamos `mb-1`, somente no eixo y `my-1` e por ai vai. Abaixo irei listar os principais estilos:
+
+#### Margin
+Nome | Variação
+:-----:|:-----:
+m  | 1~5 
+mt | 1~5 
+mr | 1~5 
+ml | 1~5 
+mb | 1~5 
+my | 1~5 
+mx | 1~5 
+
+#### Padding
+Nome | Variação
+:-----:|:-----:
+p  | 1~5 
+pt | 1~5 
+pr | 1~5 
+pl | 1~5 
+pb | 1~5 
+py | 1~5 
+px | 1~5 
+
