@@ -1,0 +1,6 @@
+@import "~bootstrap/scss/bootstrap"; // importando o bootstrap completo da pasta node_modules
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "custom";
